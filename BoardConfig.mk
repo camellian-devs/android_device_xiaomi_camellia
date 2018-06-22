@@ -25,7 +25,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor
 
-# Architecture
+# Architecrute
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -66,6 +66,9 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 TARGET_BOOTLOADER_BOARD_NAME := mt6833
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
+
+# Build hacks
+BUILD_BROKEN_DUP_RULES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
