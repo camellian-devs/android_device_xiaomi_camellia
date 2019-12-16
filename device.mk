@@ -8,6 +8,9 @@
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/camellia/camellia-vendor.mk)
 
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
