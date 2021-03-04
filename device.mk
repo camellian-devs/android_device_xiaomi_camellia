@@ -8,6 +8,9 @@
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/camellia/camellia-vendor.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
