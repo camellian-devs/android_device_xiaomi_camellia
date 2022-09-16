@@ -6,3 +6,8 @@
 
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/camellia/camellia-vendor.mk)
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_PACKAGES += \
+    fastbootd
