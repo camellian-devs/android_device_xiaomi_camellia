@@ -9,6 +9,22 @@ DEVICE_PATH := device/xiaomi/camellia
 # Inherit from the proprietary version
 include vendor/xiaomi/camellia/BoardConfigVendor.mk
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    lk \
+    preloader \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_vendor \
+    vbmeta_system \
+    vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
