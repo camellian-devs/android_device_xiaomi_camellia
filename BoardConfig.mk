@@ -73,6 +73,10 @@ TARGET_SCREEN_DENSITY := 440
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 
+# HIDL
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
