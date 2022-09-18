@@ -47,3 +47,41 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.0-impl
+
+# Rootdir
+PRODUCT_PACKAGES += \
+    getwlansar.sh \
+    init.insmod.sh \
+    setsarcal.sh \
+    setwlansarhigh.sh \
+    setwlansarlow.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.emmc \
+    factory_init.connectivity.common.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6833.rc \
+    init.mt6833.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init.stnfc.rc \
+    init_connectivity.rc \
+    meta_init.connectivity.common.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
+    miui.factoryreset.rc \
+    init.recovery.mt6833.rc \
+    init.recovery.hardware.rc \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
