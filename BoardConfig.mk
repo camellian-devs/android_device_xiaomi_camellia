@@ -120,3 +120,6 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 # Metadata
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 BOARD_USES_METADATA_PARTITION := true
+
+# Sepolicy
+include device/mediatek/sepolicy/sepolicy.mk
