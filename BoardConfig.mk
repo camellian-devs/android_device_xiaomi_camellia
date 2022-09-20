@@ -130,4 +130,4 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 BOARD_USES_METADATA_PARTITION := true
 
 # Sepolicy
-include device/mediatek/sepolicy/sepolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
