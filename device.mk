@@ -83,7 +83,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    libalsautils
+    libalsautils \
+    libtinycompress \
+    libtinyxml
+
 
 # Audio configs
 PRODUCT_COPY_FILES += \
