@@ -1,9 +1,5 @@
 [
 	{
-		"repository"	:	"android_kernel_xiaomi_camellia",
-		"target_path"	:	"kernel_xiaomi_camellia"
-	}
-	{
 		"remote"	:	"github",
 		"repository"	:	"PixelExperience/device_mediatek_sepolicy_vndr",
 		"target_path"	:	"device/mediatek/sepolicy_vndr",
